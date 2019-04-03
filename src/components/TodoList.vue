@@ -1,7 +1,8 @@
 <template>
-  <div class="hello">
-    <h1>{{ name }}'s To-Do list</h1>
-  </div>
+  <div class = "todo">
+    <div id="header">
+      <h1>To-Do list</h1>
+    </div>
 </template>
 
 <script>
