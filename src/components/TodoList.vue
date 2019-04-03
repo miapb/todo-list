@@ -19,8 +19,22 @@ export default {
       ]
     };
   },
-  methods() {},
-  computed() {}
+  methods: {
+    addTask: function(event) {
+      const name = event.target.value
+      this.tasks.push({name, done: false, id: Date.now(), editable: false})
+      event.target.value = ""
+    },
+    removeTask: function(id) {
+      this.tasks = this.tasks.filter(task => task.id !== id)
+    },
+    removeAllDone: function() {
+      this.tasks = this.tasks.filter(task => !task.done)
+    },
+    toggleEditable: function(index){
+      this.tasks[index].editable = !this.tasks[index].editable 
+    }
+  }
 };
 </script>
 
