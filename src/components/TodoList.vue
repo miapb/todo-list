@@ -109,8 +109,24 @@ h1 {
   background-color: #ffffff;
 }
 
+
 .input {
+  width: 100%;
+  height: 50px;
+  margin: auto;
   margin-bottom: 20px;
+  border: none;
+  font-size: 15px;
+}
+
+
+#inputTask {
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  &:focus {
+    outline: none;
+  }
 }
 
 .taskElement {
@@ -135,34 +151,15 @@ h1 {
   grid-area: task; 
   text-align: center;
   width: 100%;
-}
-
-.task:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .deleteTask { 
   grid-area: remove; 
 }
 
-
-.input {
-  width: 100%;
-  height: 50px;
-  margin: auto;
-  border: none;
-  font-size: 15px;
-}
-
-#inputTask:focus{
-    outline: none;
-}
-
-#inputTask {
-  margin-bottom: 30px;
-  text-align: center;
-  border-bottom: 1px solid black;
-}
 
 #removeAllDone {
   margin: 20px 0;
@@ -174,17 +171,15 @@ h1 {
   background-image: linear-gradient(to left bottom, #523956, #563c59, #5a405d, #5e4360, #624764);
   box-shadow: 10px 10px 27px -16px rgba(0,0,0,0.75);
   transition: all 50ms ease-in-out;
-}
-
-#removeAllDone:focus{
+  &:focus {
     outline: none;
-}
-
-#removeAllDone:hover{
-  filter: brightness(1.2);
-}
-#removeAllDone:active{
-  transform: scale(0.95);
+  }
+  &:hover {
+    filter: brightness(1.2);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
 }
 
 $color_cloud_burst_3_approx: rgba(34,50,84,0.03);
@@ -249,5 +244,6 @@ $color_royal_blue_approx: #4285f4;
 		transition: all 0.2s linear;
 		transition-delay: 0.15s;
 	}
+
 }
 </style>
