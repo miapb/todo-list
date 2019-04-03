@@ -9,7 +9,14 @@
 export default {
   data() {
     return {
-      name: "Mia"
+      tasks: [
+        {
+          name: "test",
+          done: false,
+          id: Date.now(),
+          editable: false
+        }
+      ]
     };
   },
   methods() {},
