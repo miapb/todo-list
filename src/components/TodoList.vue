@@ -85,7 +85,6 @@ export default {
 .todo {
   margin: 0 auto;
   width: 35%;
-  border-radius: 10px;
   min-width: 400px;
 }
 
