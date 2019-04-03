@@ -28,7 +28,7 @@
           </div>
         </div>
 
-        <div class="remove">
+        <div class="deleteTask">
           <button v-on:click="removeTask(task.id)">X</button>
         </div>   
       </div>
@@ -134,7 +134,7 @@ h1 {
   cursor: pointer;
 }
 
-.remove { 
+.deleteTask { 
   grid-area: remove; 
 }
 
