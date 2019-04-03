@@ -24,7 +24,7 @@
             <span v-if="!task.editable">
               {{task.name}}
             </span>
-            <input v-else type="text" class="input" v-on:keyup.enter="toggleEditable(index)" v-model="task.name">
+            <input v-else type="text" :id="'taskNameInput'+index" class="input" v-on:keyup.enter="toggleEditable(index)" v-model="task.name">
           </div>
         </div>
 
@@ -65,7 +65,14 @@ export default {
       this.tasks = this.tasks.filter(task => !task.done)
     },
     toggleEditable: function(index){
-      this.tasks[index].editable = !this.tasks[index].editable 
+      this.tasks[index].editable = !this.tasks[index].editable;
+      if(this.tasks[index].editable) {
+        this.$nextTick(function () {
+            let ref = "taskNameInput" + index;       
+            document.getElementById(ref).focus();
+        });
+      }
+
     }
   }
 };
