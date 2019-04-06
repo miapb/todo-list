@@ -29,7 +29,7 @@
         </div>
 
         <div class="deleteTask">
-          <button v-on:click="removeTask(task.id)">X</button>
+          <button v-on:click="removeTask(task.id)"><img src="../assets/trash.svg"/></button>
         </div>   
       </div>
 
@@ -157,6 +157,15 @@ h1 {
 
 .deleteTask { 
   grid-area: remove; 
+  button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 
