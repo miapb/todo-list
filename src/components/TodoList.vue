@@ -5,7 +5,7 @@
     </div>
     
     <div class = "content">
-      <input type="text" class="input" id="inputTask" placeholder="Add tasks.." v-on:keyup.enter="addTask">   
+      <input type="text" class="input" id="inputTask" placeholder="Add a task and be productive" v-on:keyup.enter="addTask">   
       
       <div v-for = "(task, index) in tasks" :key="task.id" class="taskElement">    
         <div class="checkbox">
