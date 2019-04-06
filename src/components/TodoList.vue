@@ -52,6 +52,7 @@ export default {
       ]
     };
   },
+
   methods: {
     addTask: function(event) {
       const name = event.target.value
@@ -72,7 +73,6 @@ export default {
             document.getElementById(ref).focus();
         });
       }
-
     }
   }
 };
@@ -252,6 +252,6 @@ $color_royal_blue_approx: #4285f4;
 		transition: all 0.2s linear;
 		transition-delay: 0.15s;
 	}
-
 }
+
 </style>
