@@ -1,8 +1,10 @@
 # todo-list
+Todo-list application made in Vue.js.
+
+[Live demo](https://miapb.github.io/todo-list/)
 
 <img src="https://github.com/miapb/todo-list/blob/master/img/To-do%20list%20example.PNG" width=500px/>
 
-Todo-list application made in Vue.js.
 
 ## Project setup
 ```
