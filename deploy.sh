@@ -15,6 +15,6 @@ git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:miapb/todo-list.git master:gh-pages
+git push -f http://github.com/miapb/todo-list.git master:gh-pages
 
 cd -
