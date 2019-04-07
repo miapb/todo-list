@@ -42,14 +42,7 @@
 export default {
   data() {
     return {
-      tasks: [
-        {
-          name: "test",
-          done: false,
-          id: Date.now(),
-          editable: false
-        }
-      ]
+      tasks: []
     };
   },
 
