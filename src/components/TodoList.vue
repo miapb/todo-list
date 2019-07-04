@@ -46,6 +46,8 @@ export default {
     };
   },
 
+  persist: ['tasks'],
+
   methods: {
     addTask: function(event) {
       const name = event.target.value
